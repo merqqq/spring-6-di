@@ -10,14 +10,12 @@ class SetterInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-
         setterInjectedController = new SetterInjectedController();
         setterInjectedController.setGreetingService(new GreetingServiceImpl());
     }
 
     @Test
     void sayHello() {
-
         System.out.println(setterInjectedController.sayHello());
     }
 }
